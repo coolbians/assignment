@@ -5,19 +5,14 @@ node_js:
 cache: npm
 
 before_install:
-<<<<<<< HEAD
-  - ls -la
-=======
   - "npm config set spin false"
   - npm i -g now
->>>>>>> 4285e025aea58e7041a5d94c596e41a6e1c0ecda
 
 install:
   - npm install
 
 script:
   - npm run build
-<<<<<<< HEAD
   - npm run test
 
 deploy:
@@ -25,6 +20,3 @@ deploy:
   script: bash scripts/deploy.sh
   skip_cleanup: true
   
-=======
-  - npm run test
->>>>>>> 4285e025aea58e7041a5d94c596e41a6e1c0ecda
